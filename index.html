@@ -14,17 +14,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/site.css">
     <script src="assets/js/site.js" defer></script>
+    <script src="https://kit.fontawesome.com/25ccdd850b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 
+    <aside class="sideMenu" id="sideMenu">
+        <a class="my-opacity" onclick="aOpacity()" href="#">Om os</a>
+        <a class="my-opacity" onclick="aOpacity()" href="#">Services</a>
+        <a class="my-opacity" onclick="aOpacity()" href="#dogs">Hunde</a>
+        <a class="my-opacity" onclick="aOpacity()" href="#">Kontakt</a>
+        <a class="my-opacity" onclick="aOpacity()" href="#" id="menuClose"><i class="fa-solid fa-x"></i></a>
+    </aside>
+
+    <main id="main-container">
         <header>
             <h1>Dansk Hundekennel</h1>
             <p>Velkommen til det bedste sted for dine pelsede venner!</p>
         </header>
 
-        <div id="menuOpen" onclick="openNavPush()">Menu</div>
+        <div id="menuOpen">Menu</div>
 
 
         <section class="container">
@@ -56,16 +66,85 @@
             </section>
 
         </section>
-
         <footer>
             <p>&copy; 2024 Dansk Hundekennel</p>
         </footer>
+
+        <section id="cookieExpContainer">
+            <div class="cookie-container">
+            <section>
+                <h3>Hvad er cookies?</h3>
+                <p>En cookie er en lille tekstfil, der gemmes på din computer, når du besøger en hjemmeside. Cookies
+                    bruges
+                    til
+                    at
+                    hjælpe hjemmesider med at fungere mere effektivt og give information til ejerne af hjemmesiden.
+                </p>
+                <h3>Hvordan bruger vi cookies?</h3>
+                <p>Vi bruger cookies til at indsamle anonyme oplysninger om brugeradfærd på vores hjemmeside, så vi
+                    kan
+                    forbedre
+                    brugeroplevelsen. Cookies bruges også til at huske dine præferencer, når du vender tilbage til
+                    vores
+                    hjemmeside.</p>
+            </section>
+            <section>
+                <div>
+                <a href="#" class="cookie" onclick="cookies()" >Ja tak</a>
+                <a href="#" class="cookie" onclick="cookies()" >kun nødvendige</a>
+                <a href="https://en.wikipedia.org/wiki/Cookie_Monster" class="cookie">Nej tak</a>
+            </div>
+                <h3>Typer af cookies, vi bruger</h3>
+                <ul>
+                    <li><strong>Nødvendige cookies:</strong> Disse cookies er afgørende for at give dig service
+                        tilgængelige
+                        via
+                        vores
+                        hjemmeside og bruge visse funktioner.</li>
+                    <li><strong>Funktionalitetscookies:</strong> Disse cookies hjælper med at forbedre
+                        funktionaliteten
+                        af
+                        vores
+                        hjemmeside ved at gemme dine præferencer.</li>
+                    <li><strong>Ydelses- og analytiske cookies:</strong> Disse cookies indsamler oplysninger om,
+                        hvordan
+                        besøgende
+                        bruger vores hjemmeside, f.eks. hvilke sider de besøger mest, og om de modtager
+                        fejlmeddelelser.
+                        Disse
+                        data
+                        hjælper os med at forbedre vores hjemmeside.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Sådan styrer du cookies</h3>
+                <p>Du kan styre og slette cookies efter eget ønske. Du kan slette alle cookies, der allerede er gemt
+                    på
+                    din
+                    computer, og
+                    du kan indstille de fleste browsere til at forhindre, at cookies bliver gemt. Men hvis du gør
+                    det,
+                    skal
+                    du
+                    muligvis
+                    manuelt justere nogle indstillinger hver gang du besøger en hjemmeside, og visse tjenester og
+                    funktioner
+                    vil
+                    muligvis ikke fungere korrekt.</p>
+                <p>For at få flere oplysninger om cookies, herunder hvordan du styrer og sletter dem, kan du besøge
+                    <a href="https://da.wikipedia.org/wiki/HTTP_cookie">denne side om cookies</a>.
+                </p>
+                <h3>Kontakt os</h3>
+        <p>Hvis du har spørgsmål om vores brug af cookies, er du velkommen til at kontakte os på følgende
+            e-mailadresse:
+            <a href="mailto:info@example.com">info@example.com</a>.
+        </p>
+        <p>Denne cookiepolitik blev sidst opdateret den 1. maj 2024.</p>
+</section>
+</div>
+
+</section>
+    </main>
 </body>
 </html>
 
-
-
-
-</body>
-
-</html>

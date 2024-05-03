@@ -9,6 +9,10 @@
     color: #333;
    
 }
+body::-webkit-scrollbar {
+    width: 0em;
+  }
+
 header {
     background-color: #4caf50;
     color: #fff;
@@ -48,14 +52,81 @@ footer {
     margin-bottom: 10px;
 }
 
-.container {
- 
-    
-}
-
 #featuredDogs{
    display: flex;
    justify-content: space-around; 
 }
 
+main{
+    transition: margin-left 0.5s ease-in-out;
+}
+aside{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d742f;
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: width 0.5s ease-in-out;
+}
 
+
+aside a{
+    display: block;
+    padding: 1rem 0 1rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+aside a:hover{
+    color: #ccc;
+}
+
+aside a:last-of-type{
+    position: absolute;
+    top: 0;
+    margin-left: 160px;
+}
+
+#menuOpen{
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background-color: #4caf50;
+    display: inline;
+    color: #fff;
+}
+#menuClose{
+    transition: display 0.5s ease-in-out 0.5s;
+}
+
+.cookie-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #eee;
+    overflow: scroll;
+    transition:height 0.5s ease-in-out;
+}
+#cookieExpContainer > div div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#cookieExpContainer .cookie{
+    padding: 0.5rem;
+    background-color: #ddd;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+
+}
